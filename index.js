@@ -1,5 +1,5 @@
 
-const validateModel = (obj) => {
+const validateModel = (obj, status=400) => {
     return (req, res, next) => {
         let errors = {};
         Object.keys(obj).forEach((field) => {
@@ -82,7 +82,7 @@ const validateModel = (obj) => {
         })
 
         if (Object.keys(errors).length > 0) {
-            res.json(errors);
+            res.status(status).json(errors);
         } else {
             next();
         }
