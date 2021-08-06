@@ -20,7 +20,7 @@ Express model validation middleware is used a middlware in express js projects t
 - Create a model based on request body. And pass your defined error messages.
 
 ```js
-const user = {
+const User = {
     name:{
         "isString":"User name must be a string",
         "min-5":"User name must be atleat 5 characters long",
