@@ -2,14 +2,28 @@
   "name": "express-model-validation-middleware",
   "version": "1.0.0",
   "description": "A middleware library for Express request validation based on model objects",
+  "keywords": [
+    "express validator",
+    "express model validation",
+    "validation",
+    "express request validator",
+    "model validator"
+  ],
+  "homepage": "https://github.com/aashutoshsoni12/express-model-validation-middleware",
+  "bugs": {
+    "url": "https://github.com/aashutoshsoni12/express-model-validation-middleware/issues",
+    "email": "aashutoshsoni12@gmail.com"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Aashutosh Soni",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aashutoshsoni12/express-model-validation-middleware.git"
+  },
+  "author": "Aashutosh Soni aashutoshsoni12@gmail.com",
+  "license": "MIT",
+  "private": false
 }

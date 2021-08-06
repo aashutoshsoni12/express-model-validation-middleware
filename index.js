@@ -59,6 +59,22 @@ const validateModel = (obj) => {
                         toPush.push(objField[item]);
                     }
                 }
+                if (req.body[field] && item.includes('isInt')) {
+                    if (typeof req.body[field] !== 'number') {
+                        toPush.push(objField[item]);
+                    }
+                }
+                if (req.body[field] && item.includes('isUrl')) {
+                    var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
+                        '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|' + // domain name
+                        '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+                        '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+                        '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+                        '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
+                    if(!pattern.test(req.body[field])){
+                        toPush.push(objField[item]);
+                    }
+                }
             })
             if (toPush.length > 0) {
                 errors[field] = toPush
