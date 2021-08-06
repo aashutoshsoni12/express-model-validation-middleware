@@ -2,7 +2,7 @@
 A middleware library for Express request validation based on model objects
 
 ## Installation - 
-npm install express-model-validation-middleware --save
+>npm install express-model-validation-middleware --save
 
 ## Features
 
@@ -99,5 +99,5 @@ List of all the validations are as -
 ## Development
 
 Want to contribute? Great!
-Feel free to mail me on aashutoshsoni12@gmail.com. Or visit my website aashutoshsoni.herokuapp.com.
+Feel free to mail me on aashutoshsoni12@gmail.com. Or visit my website aashutoshsoni.herokuapp.com
 
