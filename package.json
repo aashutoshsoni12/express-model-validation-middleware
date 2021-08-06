@@ -1,6 +1,6 @@
 {
   "name": "express-model-validation-middleware",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A middleware library for Express request validation based on model objects",
   "keywords": [
     "express validator",
